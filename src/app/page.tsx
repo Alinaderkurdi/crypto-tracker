@@ -8,6 +8,7 @@ import NotFoundUi from "@/components/not-found/not-found-ui";
 
 
 
+
 const getCrypto =  async (cryptoName:string)=>{
 
   if(cryptoName){
@@ -40,9 +41,10 @@ const getCrypto =  async (cryptoName:string)=>{
 
 export default  async function getServerSideProps({searchParams}: any) {
   const foundedCrypto = await getCrypto(searchParams.query)
-  console.log(foundedCrypto)
   const  rnderResult= ()=>{
+
     if(foundedCrypto?.status === 200){
+  
       return (
         <CryptoTag id={1234} name={foundedCrypto.name} symbol={foundedCrypto.symbol} cryptoIMG={foundedCrypto.images.large}/>
       )
@@ -57,7 +59,6 @@ export default  async function getServerSideProps({searchParams}: any) {
     }
 
     if(!foundedCrypto){
-      console.log(foundedCrypto)
       return <></>
     }
   }

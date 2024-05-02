@@ -21,7 +21,7 @@ const CryptoTag = (props: cryptoTag)=>{
             width={64}
             height={64}
             alt={name}
-            src={testImag}//cryptoIMG
+            src={cryptoIMG}
            />
            <div className={style['lable-box']}>
             <div className={style['lable']}>

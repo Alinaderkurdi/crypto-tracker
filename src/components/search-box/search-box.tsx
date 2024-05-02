@@ -19,10 +19,10 @@ const SearchBox = ()=>{
 
     const clearValue = ()=>{
         if(inputRef.current){
-          inputRef.current.value = '' 
+          inputRef.current.value = ''
+          setShowClearBT(false)
         }
     }
-
     
     const searchValue = (value: string)=>{
        setSearchParam(value)
@@ -34,16 +34,22 @@ const SearchBox = ()=>{
     }
 
     const search = ()=>{
-        
+        setShowClearBT(false)
         if(searchParam && searchParam.trim()){
             router.push(`/?query=${searchParam}`)
         }
-
         if(inputRef.current){
             inputRef.current.value = ''
         }
     }
 
+  //  useEffect(()=> {
+       //to remove query after reload !
+  //     return ()=>{
+  //        console.log('return ()=>{}')
+  //         router.push(`/`)
+  //     }
+  //  },  [])
    
     return(
         <Wrapper appendStyle={style['search-box']}>
