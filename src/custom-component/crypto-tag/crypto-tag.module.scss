@@ -1,0 +1,32 @@
+
+
+.crypto-tag {
+    @apply  
+    p-1 h-[22.75rem] flex flex-col items-center 
+    flex-grow-0 flex-shrink-0  mt-[2.2rem] mb-10 mx-auto;
+
+    .crypto-img{
+      @apply mt-[4rem]  
+    }
+
+    .lable-box {
+        @apply mt-[1.5rem] w-[29.75rem] h-[9.25rem] px-[4rem] pb-[4rem];
+
+        .lable{
+            @apply flex flex-row items-center justify-between px-1 mb-[0.9rem] h-[1.75rem];
+
+            .lable-text{
+                @apply  text-[#757575] font-normal text-sm;
+            } 
+            
+            .lable-name{
+                 text-align: right;
+                @apply text-[#212121] font-normal text-sm;
+            }
+        }
+
+        hr {
+            @apply bg-[#EEEEEE];
+        }
+    }
+}
