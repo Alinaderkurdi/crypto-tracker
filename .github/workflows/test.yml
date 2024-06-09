@@ -1,0 +1,4 @@
+##name : Test Project
+##on : push
+##jobs :
+##  test:

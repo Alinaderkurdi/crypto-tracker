@@ -1,0 +1,9 @@
+.main {
+  @apply w-full min-h-screen flex flex-col items-center justify-center;
+}
+.main .search-result {
+  @apply bg-none shadow-none w-[40rem]  p-4 pt-0  mx-0 mt-3;
+}
+.main .too-many {
+  @apply text-center mt-[4rem];
+}/*# sourceMappingURL=main.module.css.map */

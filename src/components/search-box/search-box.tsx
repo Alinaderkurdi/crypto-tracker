@@ -10,13 +10,17 @@ import style from './search-box.module.scss'
 import Image from "next/image";
 import icon from '../../../public/close-circle.svg';
 
+
+//const abropt = new AbortController()
+//
+//console.log(abropt)
+
  
 const SearchBox = ()=>{
     const router = useRouter()
     const [searchParam, setSearchParam] = useState('')
     const  inputRef = useRef<HTMLInputElement>(null)
     const [showClearBT, setShowClearBT] = useState(false)
-
     const clearValue = ()=>{
         if(inputRef.current){
           inputRef.current.value = ''

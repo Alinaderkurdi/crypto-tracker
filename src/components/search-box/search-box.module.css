@@ -1,0 +1,11 @@
+.search-box {
+  position: relative;
+  @apply h-[17.5rem] mt-[6rem];
+}
+.search-box .clear-bt {
+  position: absolute;
+  top: 82px;
+  right: -0.8rem;
+  @apply w-[1.5rem] h-[1.5rem]  flex justify-center items-center;
+  background-color: white;
+}/*# sourceMappingURL=search-box.module.css.map */
