@@ -6,8 +6,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: console something
-              run: echo --version 'hello'
+              run: echo 'hello'
+              run: node -v
             - name: shot down 
               run : echo 'finesh prossess'
-              
+
 
