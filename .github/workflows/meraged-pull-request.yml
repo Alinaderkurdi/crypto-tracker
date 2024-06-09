@@ -1,0 +1,13 @@
+name : merged pull request
+
+on : workflow_dispatch
+jobs:
+    merged:
+        runs-on: ubuntu-latest
+        steps:
+            - name: console something
+              run: echo --version 'hello'
+            - name: shot down 
+              run : echo 'finesh prossess'
+              
+
